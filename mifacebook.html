@@ -4,22 +4,79 @@
     <meta charset="UTF-8">
     <title>Las Mejores Redes Sociales</title>
     <style>
-        h1 {color:red;}
-        p {color:black;}
-        a{
+        body {
+            background-color: aquamarine;
+            font-family: 'Verdana', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: blue;
+            margin: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: black;
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
             text-decoration: none;
             background-color: darkgreen;
             padding: 10px 20px;
             color: white;
+            border-radius: 5px;
         }
 
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
-<body bgcolor="aquamarine">
-    <h1>Facebook</h1>
-    <font size="6" Sans Ms,verdana,arial ><center><b><p>¿Qué es?</p></b></center></font>
-    <a href="Index.html">Regresar al menú</a>
+<body>
+    <header>
+        <h1>Facebook</h1>
+    </header>
 
-    <img src="Imagenes/Perfil_facebook.png" width="350" height="200">
+    <section>
+        <h2>¿Qué es?</h2>
+        <p><b>Facebook es una plataforma de redes sociales creada por Mark Zuckerberg en 2004, inicialmente destinada a estudiantes universitarios en Harvard. Con el tiempo, se expandió a otros grupos universitarios y eventualmente a cualquier persona mayor de 13 años con una dirección de correo electrónico.</b></p>
+        <p><b>Facebook permite a los usuarios crear perfiles personales, conectarse con amigos y familiares, compartir contenido como fotos, videos y pensamientos, y participar en grupos y eventos.</b></p>
+
+        <div class="video-container">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/FWhh1J4yUFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <a href="Index.html" class="back-button">Regresar al menú</a>
+
+        <!-- Contenedor de la imagen -->
+        <div class="image-container">
+            <img src="Imagenes/Perfil_facebook.png" width="350" height="200" alt="Perfil de Facebook">
+        </div>
+    </section>
 </body>
 </html>
