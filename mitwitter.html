@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <title>Las Mejores Redes Sociales</title>
     <style>
-        h1 {color:red;}
-        p {color:blue;}
-        a{
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        p {
+            color: black;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        a {
             text-decoration: none;
             background-color: darkgreen;
             padding: 10px 20px;
             color: white;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        .image-container, .video-container {
+            text-align: center;
+            margin: 20px;
+        }
+        body{
+            background-color: rgba(0, 162, 255, 0.973);
         }
     </style>
 </head>
 <body>
     
     <h1>Twitter</h1>
+    
+    <p><b>Twitter</b> es una red social y plataforma de microblogging que permite a los usuarios enviar y recibir mensajes cortos conocidos como "tweets". Fue fundada en marzo de 2006 por Jack Dorsey, Biz Stone, y Evan Williams. Con su formato conciso, Twitter ha evolucionado hasta convertirse en una herramienta de comunicación rápida y directa para millones de usuarios, incluidos individuos, empresas, y organizaciones.</p>
+
+    <p>Twitter es conocido por su capacidad de conectar a personas de todo el mundo en tiempo real, permitiendo a los usuarios compartir sus pensamientos, noticias, y opiniones sobre cualquier tema. Es especialmente popular entre periodistas, políticos, y celebridades, quienes lo usan para interactuar con sus seguidores y difundir información rápidamente.</p>
+
+    <!-- Botón para regresar al menú -->
     <a href="Index.html">Regresar al menú</a>
 
-    <img src="Imagenes/Perfil_X.png" width="350" height="200">
+    <!-- Contenedor de la imagen -->
+    <div class="image-container">
+        <img src="Imagenes/Perfil_X.png" width="350" height="200" alt="Perfil de Twitter">
+    </div>
+    
+    <!-- Contenedor del video -->
+    <div class="video-container">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/muJZwbGV34g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
 </body>
 </html>
