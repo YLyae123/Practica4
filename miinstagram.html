@@ -4,21 +4,73 @@
     <meta charset="UTF-8">
     <title>Las Mejores Redes Sociales</title>
     <style>
-        h1 {color:red;}
-        p {color:blue;}
-        a{
+        body {
+            background-color: rgba(255, 145, 0, 0.89); /* Usando rgba para incluir transparencia */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            color: blue;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        a {
             text-decoration: none;
             background-color: darkgreen;
             padding: 10px 20px;
             color: white;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        .image-container, .video-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Responsividad para el video */
+        .video-container iframe {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     
     <h1>Instagram</h1>
+    
+    <p><b>Instagram</b> es una red social de propiedad de Facebook (ahora Meta) que fue lanzada en octubre de 2010. Inicialmente, la plataforma se centraba en la fotografía y permitía a los usuarios compartir imágenes, aplicar filtros y seguir a otros usuarios para ver sus publicaciones.</p>
+
+    <p>Con el tiempo, Instagram ha evolucionado y ahora incluye una variedad de características como las Historias (fotos y videos que desaparecen después de 24 horas), IGTV (videos largos), y Reels (videos cortos similares a TikTok). Además, Instagram permite a los usuarios interactuar con otros a través de mensajes directos, comentarios y Me gusta.</p>
+
+    <p>Instagram se ha convertido en una plataforma popular no solo para usuarios individuales, sino también para empresas, marcas e influencers que buscan conectar con su audiencia a través de contenido visual atractivo.</p>
+
+    <!-- Botón para regresar al menú -->
     <a href="index.html">Regresar al menú</a>
 
-    <img src="Imagenes/Perfil_ig.png" width="350" height="200">
+    <!-- Contenedor de la imagen -->
+    <div class="image-container">
+        <img src="Imagenes/Perfil_ig.png" width="350" height="200" alt="Perfil de Instagram">
+    </div>
+    
+    <!-- Contenedor del video -->
+    <div class="video-container">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/TlZHGzs17Ko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
 </body>
 </html>
